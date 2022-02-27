@@ -77,7 +77,11 @@ def orginizer(file):
     
     if port[0] in numbers:
 
-      print(line)
+      #print(line)
+
+      print(" ".join(line))
+
+      #print(line)
 
         #line = str(line)
 
@@ -85,7 +89,7 @@ def orginizer(file):
 
       #ID = 1 
 
-      result += line 
+      #result += line 
       
       #for I in line: 
 
@@ -105,18 +109,20 @@ def orginizer(file):
 
   #A =""
     
-  for i in result:
+  #for i in result:
     
-    A =""
+    #A =""
 
     #counter += 1 
 
-    A += i + " " 
+    #A += i + " " 
+
+    #''.join(A)
 
     #if i in numbers:
 
 
-  print (A) 
+  #print (A) 
 
     
 
