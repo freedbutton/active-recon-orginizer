@@ -1,0 +1,163 @@
+#!/usr/bin/env python3
+
+### IMPORT STATEMENTS ###
+import sys
+
+
+
+
+### HELPER FUNCTIONS (IF NECESSARY) ###
+#fuction to help orginize Nmap scans and put them all into one file 
+def orginizer(file): 
+
+  #first want to define all needed variables 
+
+ 
+
+
+  #a list veriable to store the result 
+
+  result = []
+
+  #counter = 0
+
+  A = ""
+  numbers = "123456789"
+  #ID = 0
+
+
+   #split file into lines 
+  f = file.readlines()
+
+  
+
+  #a loop to read each line in the file and then ideidify if its useable infomstion 
+  for line in f:
+
+
+    line = line.rstrip() 
+    line = line.split()
+
+    #print(line)
+
+     #a veriable will be needed to help identify what information is and isnt impartant to us 
+      
+
+    # define a var to identidy if line is useful 
+    port = line[0]
+    #print(port) 
+
+    #diefne a var to hold numbers
+    #numbers = "123456789"
+
+    #for char in port[0]:
+
+      #print(char)
+
+      #Identifyer = char[0]
+
+      #print(Identifyer)
+
+
+
+      
+
+      
+
+    numbers = "123456789" 
+
+      #print(item)
+
+      
+      
+    
+
+
+    #if then the decided what to do with the line 
+    
+    if port[0] in numbers:
+
+      print(line)
+
+        #line = str(line)
+
+        
+
+      #ID = 1 
+
+      result += line 
+      
+      #for I in line: 
+
+        #A =""
+        #A += line 
+
+    #print(A)
+
+     
+
+        
+        
+          #print(char)
+
+
+      #counter = 0
+
+  #A =""
+    
+  for i in result:
+    
+    A =""
+
+    #counter += 1 
+
+    A += i + " " 
+
+    #if i in numbers:
+
+
+  print (A) 
+
+    
+
+    
+
+      
+
+   
+      
+  #print (result)
+      
+      
+
+   
+
+
+   
+
+      
+
+      
+
+    
+  
+
+
+
+
+
+### MAIN FUNCTION ###
+def main():
+  file_name = sys.argv[1]
+  open_file = open(file_name) 
+  
+  (orginizer(open_file))
+  open_file.close()
+
+  
+  
+
+
+### DUNDER CHECK ###
+if __name__ == "__main__":
+  main()
