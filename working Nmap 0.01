@@ -23,7 +23,7 @@ def orginizer(file):
 
   A = ""
   numbers = "123456789"
-  #ID = 0
+
 
 
    #split file into lines 
@@ -38,26 +38,14 @@ def orginizer(file):
     line = line.rstrip() 
     line = line.split()
 
-    #print(line)
 
-     #a veriable will be needed to help identify what information is and isnt impartant to us 
       
 
     # define a var to identidy if line is useful 
     port = line[0]
     #print(port) 
 
-    #diefne a var to hold numbers
-    #numbers = "123456789"
-
-    #for char in port[0]:
-
-      #print(char)
-
-      #Identifyer = char[0]
-
-      #print(Identifyer)
-
+    
 
 
       
@@ -77,81 +65,11 @@ def orginizer(file):
     
     if port[0] in numbers:
 
-      #print(line)
+      
 
       print(" ".join(line))
 
-      #print(line)
-
-        #line = str(line)
-
-        
-
-      #ID = 1 
-
-      #result += line 
-      
-      #for I in line: 
-
-        #A =""
-        #A += line 
-
-    #print(A)
-
-     
-
-        
-        
-          #print(char)
-
-
-      #counter = 0
-
-  #A =""
-    
-  #for i in result:
-    
-    #A =""
-
-    #counter += 1 
-
-    #A += i + " " 
-
-    #''.join(A)
-
-    #if i in numbers:
-
-
-  #print (A) 
-
-    
-
-    
-
-      
-
-   
-      
-  #print (result)
-      
-      
-
-   
-
-
-   
-
-      
-
-      
-
-    
-  
-
-
-
-
-
+ 
 ### MAIN FUNCTION ###
 def main():
   file_name = sys.argv[1]
