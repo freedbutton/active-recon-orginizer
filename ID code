@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+
+### IMPORT STATEMENTS ###
+import sys
+
+
+
+
+### HELPER FUNCTIONS (IF NECESSARY) ###
+
+def Id(file):
+  Id = 0 
+
+  f = file.readlines()
+
+
+  for line in f: 
+
+
+    line = line.rstrip() 
+    line = line.split()
+
+    #print(file)
+
+
+    if line[0] == "Nmap":
+      Id = 1 
+
+    elif line[0] == "Nikto":
+      Id = 2
+
+  print(Id)
+  
+
+
+
+
+
+### MAIN FUNCTION ###
+def main():
+  file_name = sys.argv[1]
+  open_file = open(file_name) 
+  
+  (Id(open_file))
+  open_file.close()
+
+  
+  
+
+
+### DUNDER CHECK ###
+if __name__ == "__main__":
+  main()
